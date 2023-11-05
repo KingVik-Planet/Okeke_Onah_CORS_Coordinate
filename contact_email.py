@@ -13,5 +13,5 @@ def contact_email(message):
         server.login(username, password)
         server.sendmail(username, reciever, message)
 
-
-contact_email()
+#
+# contact_email()
