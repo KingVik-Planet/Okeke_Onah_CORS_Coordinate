@@ -5,7 +5,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.image("images/photo.jpg", caption = "Kingsley Chika CHUKWU")
-    links = """|| [Twitter](https://polyunwana.edu.ng/) || 
+    links = """|| [Twitter](https://twitter.com/KingVik_Planet) || 
     [Linkedin](https://linkedin.com/in/kingsley-chika-chukwu-235791154/) || [FaceBook](unn.edu.ng) ||
     [WikiMedia](wikiik) || [OpenStreetMap](fagfajjfk)||
     [Email](chukwukingsley56@gmail.com) || [Instagram](fjdfbuibdif) ||
