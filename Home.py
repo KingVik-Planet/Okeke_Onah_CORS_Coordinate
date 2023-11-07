@@ -5,8 +5,10 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.image("images/photo.jpg", caption = "Kingsley Chika CHUKWU")
-    links = """[Twitter](https://polyunwana.edu.ng/) || 
-    [Linkind](uniquemapper.org) || [FaceBook](unn.edu.ng) || [Wiki](wikiik) ||[SOD](fagfajjfk)||[Email](chukwukingsley56@gmail.com)
+    links = """|| [Twitter](https://polyunwana.edu.ng/) || 
+    [Linkedin](https://linkedin.com/in/kingsley-chika-chukwu-235791154/) || [FaceBook](unn.edu.ng) ||
+    [WikiMedia](wikiik) || [OpenStreetMap](fagfajjfk)||
+    [Email](chukwukingsley56@gmail.com) || [Instagram](fjdfbuibdif) ||
     """
     st.info(links)
     #st.image("images/1.png", width = 300)
