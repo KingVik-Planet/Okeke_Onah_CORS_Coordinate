@@ -13,6 +13,7 @@ with col1:
     st.info(links)
     #st.image("images/1.png", width = 300)
 
+
 with col2:
     st.title("Kingsley Chika CHUKWU")
     content = """Hi, My Name is Kingsley Chika CHUKWU, I hold a Diploma and a Bachelor's Degree from [Akanu Ibiam 
