@@ -17,4 +17,4 @@
 
 4. **PDF Invoices**
 ![PDF](https://github.com/KingVik-Planet/MWB_Project/blob/main/images/4.png)
-* This create PDF Document using python
+* This create PDF Document from Excel using python
