@@ -2,13 +2,28 @@ import smtplib, ssl
 import streamlit as st
 
 st.title("EmmaFIOkeke CORS_Coordinate")
-content = """Hi, My Name is Kingsley Chika CHUKWU, I hold a Diploma and a Bachelor's Degree from [Akanu Ibiam 
-    Federal Polytechnic, Unwana](https://polyunwana.edu.ng/) and [University of Nigeria](https://unn.edu.ng) 
-    respectively in the Geoinformatics and Surveying Department, MSc in Environmental Information System (EIS) from UNILAK, Rwanda
+content = """Hello, Thank you for choosing us to handle your data. 
+Please follow these simple steps for a seamless experience:
 
-I am a Remote Sensing Specialist and Geospatial Scientist, enthusiastic about Artificial Intelligence and Machine learning. I am currently 
-working towards becoming a Data Scientist, aiming to integrate Artificial Intelligence and Machine Learning to create 
-Geospatial Artificial Intelligence..
+1. Enter Your Name: Provide your full name so we can address you properly.
+
+2. Enter Your Email: Double-check your email for accuracy. Any errors might result in a delay or failure to receive feedback.
+
+3. Short Message or Remarks: If you have any additional comments or remarks, feel free to include them here.
+
+4. Upload Your Data: Select the file you wish to upload for processing.
+
+5. Submit: Once you've completed the above steps, hit the submit button.
+
+6. Confirmation Email: You will receive a confirmation email once your submission is successfully received. Please allow 3 to 15 minutes for this.
+
+7. Feedback Delivery: Expect to receive feedback on your data within 4 to 5 hours of submission.
+
+8. No Feedback?: In the rare event that you don't receive feedback after 5 hours, please don't hesitate to contact us.
+
+9. 24-hour Response: If you encounter any issues or have questions, rest assured, we'll provide you with feedback within 24 hours.
+
+Thank you once again for choosing us. Have a wonderful and productive day!
 """
 st.info(content)
 

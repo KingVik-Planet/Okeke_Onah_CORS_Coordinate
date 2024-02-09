@@ -4,10 +4,10 @@ import pandas as pd
 col1, col2 = st.columns(2)
 
 with col1:
-    st.image("images/UNN.png", caption = "University of Nigeria Enugu Campuss")
-    links = """|| [Twitter](https://twitter.com/KingVik_Planet) || 
-    [Linkedin](https://linkedin.com/in/kingsley-chika-chukwu-235791154/) || [FaceBook](unn.edu.ng) ||
-    [WikiMedia](wikiik) || [OpenStreetMap](fagfajjfk)|| [Instagram](fjdfbuibdif) ||
+    st.image("images/UNN.png", caption = "University of Nigeria Enugu Campus")
+    links = """|| [Research Gate](https://www.researchgate.net/institution/University-of-Nigeria2) || 
+    [Department of Geoinformatics and Suveying](https://www.unn.edu.ng/academics/faculties/environmental-studies/geo-informatics-and-surveying/) || [FaceBook](unn.edu.ng) ||
+    [University of Nigeria](unn.edu.ng) || 
     """
     st.info(links)
     #st.image("images/1.png", width = 300)
@@ -15,13 +15,13 @@ with col1:
 
 with col2:
     st.title("EmmaFIOkeke CORS_Coordinate")
-    content = """Hi, My Name is Kingsley Chika CHUKWU, I hold a Diploma and a Bachelor's Degree from [Akanu Ibiam 
-    Federal Polytechnic, Unwana](https://polyunwana.edu.ng/) and [University of Nigeria](https://unn.edu.ng) 
-    respectively in the Geoinformatics and Surveying Department, MSc in Environmental Information System (EIS) from UNILAK, Rwanda
-    
-I am a Remote Sensing Specialist and Geospatial Scientist, enthusiastic about Artificial Intelligence and Machine learning. I am currently 
-working towards becoming a Data Scientist, aiming to integrate Artificial Intelligence and Machine Learning to create 
-Geospatial Artificial Intelligence..
+    content = """Background: EmmaFIOkeke CORS_Coordinate, your premier online static data processing platform 
+Powered by [Dept of Geoinformatics and Surveying, University of Nigeria](https://www.unn.edu.ng/academics/faculties/environmental-studies/geo-informatics-and-surveying/).
+ Here, you can upload static data for comprehensive processing. Please note the following:
+ - Processing Time: The processing time typically ranges from 2 to 5 hours.
+ - Processing Methods: Our platform employs three different methods to ensure accurate coordinate adjustments and processing.
+- Adjustments and Plotting: Upon processing, our system automatically plots the points on the map and provide Output Note in PDF through the submitted email. 
+
 """
 
     st.info(content)
