@@ -4,7 +4,7 @@ import pandas as pd
 col1, col2 = st.columns(2)
 
 with col1:
-    st.image("images/photo.jpg", caption = "Kingsley Chika CHUKWU")
+    st.image("images/UNN.png", caption = "University of Nigeria Enugu Campuss")
     links = """|| [Twitter](https://twitter.com/KingVik_Planet) || 
     [Linkedin](https://linkedin.com/in/kingsley-chika-chukwu-235791154/) || [FaceBook](unn.edu.ng) ||
     [WikiMedia](wikiik) || [OpenStreetMap](fagfajjfk)|| [Instagram](fjdfbuibdif) ||
@@ -14,38 +14,15 @@ with col1:
 
 
 with col2:
-    st.title("Kingsley Chika CHUKWU")
+    st.title("EmmaFIOkeke CORS_Coordinate")
     content = """Hi, My Name is Kingsley Chika CHUKWU, I hold a Diploma and a Bachelor's Degree from [Akanu Ibiam 
     Federal Polytechnic, Unwana](https://polyunwana.edu.ng/) and [University of Nigeria](https://unn.edu.ng) 
     respectively in the Geoinformatics and Surveying Department, MSc in Environmental Information System (EIS) from UNILAK, Rwanda
     
 I am a Remote Sensing Specialist and Geospatial Scientist, enthusiastic about Artificial Intelligence and Machine learning. I am currently 
 working towards becoming a Data Scientist, aiming to integrate Artificial Intelligence and Machine Learning to create 
-Geospatial Artificial Intelligence.
+Geospatial Artificial Intelligence..
 """
 
     st.info(content)
 
-content2 = """ 
-This is my Website which showcase my project built in python.
-\nFor any query,  Please Contact me.
-"""
-st.write(content2)
-
-col3, col4 = st.columns(2)
-
-df = pd.read_csv("data.csv", sep = ";")
-
-with col3:
-    for index, row in df[:10].iterrows():
-        st.subheader(row["title"])
-        st.write(row["description"])
-        st.image("images/" + row["image"])
-        st.write(f"Source Code: {row['url']}")
-
-
-with col4:
-    for index, row in df[10:].iterrows():
-        st.subheader(row["title"])
-        st.write(row["description"])
-        st.image("images/" + row["image"])
