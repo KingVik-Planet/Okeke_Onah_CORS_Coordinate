@@ -1,15 +1,15 @@
 import streamlit as st
 from contact_email import contact_email
 
-st.header("Contact me")
+st.header("Uploading the Data to be Processed")
 
 with st.form(key="email_forms"):
-    user_name = st.text_input("Which Name Should I Address You With?: ")
-    user_email = st.text_input("Enter your Email Address: ")
-    raw_message = st.text_area("Your Message: ")
+    user_name = st.text_input("Which Name Should I Address You With?: (Compulsory) ")
+    user_email = st.text_input("Enter your Email Address: (Compulsory) ")
+    raw_message = st.text_area("Your Message: (Optional) ")
 
     # Add file uploader for attachment
-    attachment = st.file_uploader("Upload Attachment (Optional)")
+    attachment = st.file_uploader("Upload Attachment (Compulsory)")
 
     subject = "New email"
     if user_email:

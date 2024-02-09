@@ -27,27 +27,14 @@ Thank you once again for choosing us. Have a wonderful and productive day!
 """
 st.info(content)
 
-""""
-def contact_email(message):
-    host = "smtp.gmail.com"
-    port = 465
-    username = "chukwukingsley56@gmail.com" #"Your Email Address or Username Like: chukwukingsley56@gmail.com"
-    password = "wsmu wbcy hysd ikxk" #Passowrd
-    reciever = "chukwukingsley56@gmail.com"
-    context = ssl.create_default_context()
 
-    with smtplib.SMTP_SSL(host, port, context=context) as server:
-        server.login(username, password)
-        server.sendmail(username, reciever, message)
-
-wsmu wbcy hysd ikxk
-"""
 import smtplib
 import ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 from keys import username1, password1
+
 def contact_email(subject, message, attachment_content=None, attachment_name=None):
     host = "smtp.gmail.com"
     port = 465

@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.header("Meet Our Team")
+st.header("||   Meet Our Research Project Team ||")
 
 col1, col2 = st.columns(2)
 

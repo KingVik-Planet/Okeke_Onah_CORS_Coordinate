@@ -14,7 +14,7 @@ with col1:
     st.image("images/Kogi.png", caption="Google Earth Engine Cloud Computing ")
     App = "[Google Earth Engine Cloud Computing App](https://chukwukingsley56.users.earthengine.app/view/kogiflood2022)"
     App
-    st.subheader("Abstract")
+    st.subheader("More Details")
     Text1 = " Uploading "
     Text1
 
@@ -28,6 +28,6 @@ with col2:
     st.image("images/LST.png", caption="Google Earth Engine Cloud Computing ")
     App = "[Google Earth Engine Cloud Computing App](https://chukwukingsley56.users.earthengine.app/view/south-eastern-project)"
     App
-    st.subheader("Abstract")
+    st.subheader("More Details")
     Text1 = " Uploading "
     Text1
