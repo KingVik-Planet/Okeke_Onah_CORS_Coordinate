@@ -6,7 +6,7 @@ col1, col2 = st.columns(2)
 
 
 with col1:
-    st.image("images/photo.jpg", caption = "Professor Francis I. Okeke\n Supervisor")
+    st.image("images/9.png", caption = "Professor Francis I. Okeke\n Supervisor")
     about = """||[Research Gate](https://www.researchgate.net/profile/Francis-Okeke-4)||...............||[UNN - Staff Details](https://staffprofile.unn.edu.ng/profile/1854)|| """
     about
 
