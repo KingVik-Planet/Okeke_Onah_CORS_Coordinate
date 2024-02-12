@@ -6,7 +6,7 @@ col1, col2 = st.columns(2)
 with col1:
     st.image("images/UNN.png", caption = "University of Nigeria Enugu Campus")
     links = """|| [Research Gate](https://www.researchgate.net/institution/University-of-Nigeria2) || 
-    [Department of Geoinformatics and Suveying](https://www.unn.edu.ng/academics/faculties/environmental-studies/geo-informatics-and-surveying/) || [FaceBook](unn.edu.ng) ||
+    [Department of Geoinformatics and Suveying](https://www.unn.edu.ng/academics/faculties/environmental-studies/geo-informatics-and-surveying/)||
     [University of Nigeria](unn.edu.ng) || 
     """
     st.info(links)
