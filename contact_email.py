@@ -35,12 +35,13 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 from keys import user, pwd
 import os
+import base64
 
 def contact_email(subject, message, attachment_content=None, attachment_name=None):
     host = "smtp.gmail.com"
     port = 465
     username = user
-    password = ${{ secrets.KEYS }}
+    password = pwd
     sender = username
     receiver = "chukwukingsley56@gmail.com"
     context = ssl.create_default_context()
