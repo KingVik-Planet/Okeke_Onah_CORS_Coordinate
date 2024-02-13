@@ -33,20 +33,19 @@ import ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
-#from keys import user, pwd
-from dotenv import load_dotenv
-import os
+from keys import pwd
 
-load_dotenv(".env")
-username: str = os.getenv("user")
-password: str = os.getenv("pwd")
+# headers= {
+#     "authorization": st.secrets["pwd"],
+#     "content-type": "application/josn"
+# }
 
-print(username, password)
 def contact_email(subject, message, attachment_content=None, attachment_name=None):
     host = "smtp.gmail.com"
     port = 465
-    username = os.getenv("user")
-    password = os.getenv("pwd")
+    username = "chukwukingsley56@gmail.com"
+   # password = "pwd"
+    password = st.secrets["pwd"]
     sender = username
     receiver = "chukwukingsley56@gmail.com"
     context = ssl.create_default_context()
