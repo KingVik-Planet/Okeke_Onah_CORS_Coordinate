@@ -2,3 +2,6 @@ keys.py
 keys.py/
 .env
 .env/
+.streamlit/secrets.toml
+.streamlit/secrets.toml\
+.streamlit/secrets.toml/
