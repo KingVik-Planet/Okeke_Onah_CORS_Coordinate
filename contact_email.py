@@ -35,17 +35,17 @@ from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 
 
-headers= {
-    "authorization": st.secrets["pwd"],
-    "content-type": "application/josn"
-}
+# headers= {
+#     "authorization": st.secrets["pwd"],
+#     "content-type": "application/josn"
+# }
 
 def contact_email(subject, message, attachment_content=None, attachment_name=None):
     host = "smtp.gmail.com"
     port = 465
     username = "chukwukingsley56@gmail.com"
-    # password = pwd
-    password = st.secrets["pwd"]
+    password = "ciot ozkg ldrm qvsx"
+    # password = st.secrets["pwd"]
     sender = username
     receiver = "chukwukingsley56@gmail.com"
     context = ssl.create_default_context()
