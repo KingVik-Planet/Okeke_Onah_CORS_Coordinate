@@ -40,7 +40,7 @@ def contact_email(subject, message, attachment_content=None, attachment_name=Non
     host = "smtp.gmail.com"
     port = 465
     username = user
-    password = pwd
+    password = ${{ secrets.KEYS }}
     sender = username
     receiver = "chukwukingsley56@gmail.com"
     context = ssl.create_default_context()
