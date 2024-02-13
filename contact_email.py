@@ -34,14 +34,17 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 from keys import user, pwd
+from dotenv import load_dotenv
 import os
-import base64
+
+def configure():
+    load_dotenv()
 
 def contact_email(subject, message, attachment_content=None, attachment_name=None):
     host = "smtp.gmail.com"
     port = 465
     username = user
-    password = pwd
+    password = os.getenv("pwd")
     sender = username
     receiver = "chukwukingsley56@gmail.com"
     context = ssl.create_default_context()
