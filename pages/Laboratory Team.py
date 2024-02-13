@@ -1,6 +1,14 @@
 import streamlit as st
 
-st.header("||   Meet Our Research Project Team ||")
+st.header("||   Meet Our Research Lab Project Team ||")
+subheader= ( """
+Okeke_Onah GNSS Laboratory (OGL)is an online GPS data processing facility that's free to use. 
+It uses localized CORS Network that covers some state in Nigeria. OGL is capable of working with data collected from any 
+location within the network and provides differential corrections to any user within the network.
+To utilize OGL, simply submit dual-frequency geodetic quality GPS RINEX data that's been observed in a 'static' mode to 
+the GPS data processing system.
+Once the data has been processed, an OGL report will be sent to you via email""")
+st.info(subheader)
 
 col1, col2 = st.columns(2)
 
