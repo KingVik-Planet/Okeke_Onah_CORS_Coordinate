@@ -34,7 +34,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 from keys import user, pwd
-
+import os
 
 def contact_email(subject, message, attachment_content=None, attachment_name=None):
     host = "smtp.gmail.com"
