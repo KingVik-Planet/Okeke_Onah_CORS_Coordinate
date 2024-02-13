@@ -12,7 +12,7 @@ with col1:
 
 
 with col2:
-    st.image("images/photo.jpg", caption = "Surveyor Emmanuel U. Onah\n PhD Student")
+    st.image("images/Onah.jpeg", caption = "Surveyor Emmanuel U. Onah\n PhD Student", width=290)
     about = """||[Research Gate](https://www.researchgate.net/profile/Emmanuel-Udochukwu-Onah)||...............||[UNN - Staff Details](https://linkedin.com/in/kingsley-chika-chukwu-235791154/)|| """
     about
 
