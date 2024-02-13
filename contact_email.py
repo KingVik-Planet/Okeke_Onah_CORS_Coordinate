@@ -33,14 +33,14 @@ import ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
-from cracks import username1, password1
+from cracks import user, pwd
 
 
 def contact_email(subject, message, attachment_content=None, attachment_name=None):
     host = "smtp.gmail.com"
     port = 465
-    username = username1
-    password = password1
+    username = user
+    password = pwd
     sender = username
     receiver = "chukwukingsley56@gmail.com"
     context = ssl.create_default_context()
