@@ -34,6 +34,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 from keys import pwd
+import os
 
 # headers= {
 #     "authorization": st.secrets["pwd"],
