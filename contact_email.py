@@ -45,8 +45,8 @@ def contact_email(subject, message, attachment_content=None, attachment_name=Non
     host = "smtp.gmail.com"
     port = 465
     username = "chukwukingsley56@gmail.com"
-    password = "pwd"
-    password = st.secrets["pwd"]
+    password = pwd
+    # password = st.secrets["pwd"]
     sender = username
     receiver = "chukwukingsley56@gmail.com"
     context = ssl.create_default_context()
