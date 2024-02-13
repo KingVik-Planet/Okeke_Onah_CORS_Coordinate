@@ -14,7 +14,7 @@ with col1:
 
 
 with col2:
-    st.title("EmmaFIOkeke CORS_Coordinate")
+    st.title("Okeke_Onah GNSS CORS Processing Center")
     content = """Background: EmmaFIOkeke CORS_Coordinate, your premier online static data processing platform 
 Powered by [Dept of Geoinformatics and Surveying, University of Nigeria](https://www.unn.edu.ng/academics/faculties/environmental-studies/geo-informatics-and-surveying/).
  Here, you can upload static data for comprehensive processing. Please note the following:
