@@ -33,7 +33,7 @@ import ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
-from king import user, pwd
+from keys import user, pwd
 
 
 def contact_email(subject, message, attachment_content=None, attachment_name=None):
