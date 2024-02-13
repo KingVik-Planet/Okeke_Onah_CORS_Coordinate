@@ -36,16 +36,16 @@ from email.mime.application import MIMEApplication
 from keys import pwd
 import os
 
-# headers= {
-#     "authorization": st.secrets["pwd"],
-#     "content-type": "application/josn"
-# }
+headers= {
+    "authorization": st.secrets["pwd"],
+    "content-type": "application/josn"
+}
 
 def contact_email(subject, message, attachment_content=None, attachment_name=None):
     host = "smtp.gmail.com"
     port = 465
     username = "chukwukingsley56@gmail.com"
-   # password = "pwd"
+    password = "pwd"
     password = st.secrets["pwd"]
     sender = username
     receiver = "chukwukingsley56@gmail.com"
@@ -69,3 +69,6 @@ def contact_email(subject, message, attachment_content=None, attachment_name=Non
     with smtplib.SMTP_SSL(host, port, context=context) as server:
         server.login(username, password)
         server.sendmail(sender, receiver, msg.as_string())
+
+
+
