@@ -33,7 +33,8 @@ import ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
-import xxx as me
+
+def me(xxx):
 
 # headers= {
 #     "authorization": st.secrets["pwd"],
@@ -44,7 +45,7 @@ def contact_email(subject, message, attachment_content=None, attachment_name=Non
     host = "smtp.gmail.com"
     port = 465
     username = "chukwukingsley56@gmail.com"
-    password = me.pwd
+    password = me("xxx")
     # password = st.secrets["pwd"]
     sender = username
     receiver = "chukwukingsley56@gmail.com"
