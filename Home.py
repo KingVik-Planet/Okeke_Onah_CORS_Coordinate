@@ -4,7 +4,9 @@ import pandas as pd
 col1, col2 = st.columns(2)
 
 with col1:
-    st.image("images/UNN.png", caption = "University of Nigeria Enugu Campus")
+    st.image("images/UNN.png", caption = "")
+    st.markdown("<span style='color: blue; font-weight: bold;'>University of Nigeria Enugu Campus</span> <i>- Enugu State Nigeria</i>",
+                unsafe_allow_html=True)
     # links = """|| [Research Gate](https://www.researchgate.net/institution/University-of-Nigeria2) ||
     # # [Department of Geoinformatics and Suveying](https://www.unn.edu.ng/academics/faculties/environmental-studies/geo-informatics-and-surveying/)||
     # # [University of Nigeria](unn.edu.ng) ||
