@@ -1,8 +1,10 @@
 import streamlit as st
 from contact_email import contact_email
 
-st.title("Okeke_Onah GNSS CORS processing center")
-st.header("Uploading the Data to be Processed")
+st.markdown("<h1 style='text-align: center; color: blue;'>Okeke_Onah GNSS CORS Processing Center</h1>",
+            unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: blue;'>Uploading the Data to be Processed</h2>",
+            unsafe_allow_html=True)
 content = """Hello, Thank you for choosing us to handle your data. 
 Please follow these simple steps for a seamless experience:
 

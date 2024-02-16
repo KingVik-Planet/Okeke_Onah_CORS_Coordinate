@@ -10,11 +10,13 @@ with col1:
     [University of Nigeria](unn.edu.ng) || 
     """
     st.info(links)
-    #st.image("images/1.png", width = 300)
+    st.image("images/GPS.jpg", width = 300)
 
 
 with col2:
-    st.title("Okeke_Onah GNSS CORS Processing Center")
+    # st.title("Okeke_Onah GNSS CORS Processing Center")
+    st.markdown("<h1 style='text-align: center; color: blue;'>Okeke_Onah GNSS CORS Processing Center</h1>",
+                unsafe_allow_html=True)
     content = """
 Okeke_Onah GNSS CORS Processing Center, your premier online static data processing platform 
 Powered by [Dept of Geoinformatics and Surveying, University of Nigeria](https://www.unn.edu.ng/academics/faculties/environmental-studies/geo-informatics-and-surveying/).
