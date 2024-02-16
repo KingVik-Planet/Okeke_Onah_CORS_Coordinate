@@ -22,7 +22,7 @@ with col1:
 
     st.markdown(about, unsafe_allow_html=True)
 
-    st.image("images/GPS.jpg", width = 300)
+    st.image("images/GPS.jpg", width = 345)
 
 with col2:
 #     # st.title("Okeke_Onah GNSS CORS Processing Center")
