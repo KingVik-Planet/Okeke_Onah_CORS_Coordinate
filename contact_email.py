@@ -33,13 +33,13 @@ import ssl
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
-from xxx import pwd
+# from .secrets.toml import pwd
 
 
-# headers= {
-#     "authorization": st.secrets["pwd"],
-#     "content-type": "application/josn"
-# }
+headers= {
+    "authorization": st.secrets["pwd"],
+    "content-type": "application/josn"
+}
 
 def contact_email(subject, message, attachment_content=None, attachment_name=None):
     host = "smtp.gmail.com"
