@@ -47,7 +47,6 @@ with col1:
         }
 
 
-
         # Create a Folium map centered around the mean of latitudes and longitudes
         m = folium.Map(location=[np.mean(list(map(lambda x: x["lat"], station_data.values()))),
                                  np.mean(list(map(lambda x: x["lon"], station_data.values())))],
