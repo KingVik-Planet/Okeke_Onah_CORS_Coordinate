@@ -5,11 +5,23 @@ col1, col2 = st.columns(2)
 
 with col1:
     st.image("images/UNN.png", caption = "University of Nigeria Enugu Campus")
-    links = """|| [Research Gate](https://www.researchgate.net/institution/University-of-Nigeria2) || 
-    [Department of Geoinformatics and Suveying](https://www.unn.edu.ng/academics/faculties/environmental-studies/geo-informatics-and-surveying/)||
-    [University of Nigeria](unn.edu.ng) || 
+    # links = """|| [Research Gate](https://www.researchgate.net/institution/University-of-Nigeria2) ||
+    # # [Department of Geoinformatics and Suveying](https://www.unn.edu.ng/academics/faculties/environmental-studies/geo-informatics-and-surveying/)||
+    # # [University of Nigeria](unn.edu.ng) ||
+    # """
+
+    about = """
+    <div style="font-size: 20px; border: 1px solid #ccc; border-radius: 5px; padding: 10px; background-color: lightgreen;">
+        <div style="display: flex; border-radius: 1px; overflow: hidden;">
+            <a href="https://www.researchgate.net/institution/University-of-Nigeria2" style="text-decoration: none; color: blue; display: inline-block; padding: 5px 5px;">Research Gate</a>|
+            <a href="(https://www.unn.edu.ng/academics/faculties/environmental-studies/geo-informatics-and-surveying/" style="text-decoration: none; color: blue; display: inline-block; padding: 5px 5px;">Dept of GSV</a>|
+            <a href="https://unn.edu.ng" style="text-decoration: none; color: blue; display: inline-block; padding: 5px 5px;">UNN</a>
+        </div>
+    </div>
     """
-    st.info(links)
+
+    st.markdown(about, unsafe_allow_html=True)
+
     st.image("images/GPS.jpg", width = 300)
 
 with col2:
