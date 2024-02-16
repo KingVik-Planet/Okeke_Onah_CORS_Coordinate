@@ -9,7 +9,7 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 
-st.markdown("<h2 style='text-align: center; color: blue;'>Uploading the Data to be Processed</h2>",
+st.markdown("<h2 style='text-align: center; color: blue;'>Upload the CORS Data Here:</h2>",
             unsafe_allow_html=True)
 content = """Hello, Thank you for choosing us to handle your data. 
 Please follow these simple steps for a seamless experience:
