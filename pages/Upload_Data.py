@@ -1,8 +1,14 @@
 import streamlit as st
 from contact_email import contact_email
 
-st.markdown("<h1 style='text-align: center; color: blue;'>Okeke_Onah GNSS CORS Processing Center</h1>",
-            unsafe_allow_html=True)
+# st.markdown("<h1 style='text-align: center; color: blue;'>Okeke_Onah GNSS CORS Processing Center</h1>",
+#             unsafe_allow_html=True)
+st.markdown("""
+    <div style='text-align: center; background-color: lightgreen; border-radius: 10px; padding: 10px;'>
+        <h1 style='color: blue;'>Okeke_Onah GNSS CORS Processing Center</h1>
+    </div>
+""", unsafe_allow_html=True)
+
 st.markdown("<h2 style='text-align: center; color: blue;'>Uploading the Data to be Processed</h2>",
             unsafe_allow_html=True)
 content = """Hello, Thank you for choosing us to handle your data. 
