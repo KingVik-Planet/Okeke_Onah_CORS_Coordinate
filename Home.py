@@ -18,7 +18,6 @@ with col2:
     content = """
 Okeke_Onah GNSS CORS Processing Center, your premier online static data processing platform 
 Powered by [Dept of Geoinformatics and Surveying, University of Nigeria](https://www.unn.edu.ng/academics/faculties/environmental-studies/geo-informatics-and-surveying/).
- Here, you can upload static data for comprehensive processing. Please note the following:
  - Processing Time: The processing time typically ranges from 2 to 5 hours.
  - Processing Methods: Our platform employs three different methods to ensure accurate coordinate adjustments and processing.
 - Adjustments and Plotting: Upon processing, our system automatically plots the points on the map and provide Output Note in PDF through the submitted email. 
