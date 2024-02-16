@@ -40,8 +40,12 @@ with col1:
             "ASAB": {"lat": 6.19500475, "lon": 6.719156056, "height": 54.877},
             "GEOS": {"lat": 6.330945781, "lon": 5.638304722, "height": 91.143},
             "OSUN": {"lat": 7.752762361, "lon": 4.52582788, "height": 326.628},
-            "WARR": {"lat": 5.567309747, "lon": 5.8100107, "height": 16.382}
+            "WARR": {"lat": 5.567309747, "lon": 5.8100107, "height": 16.382},
+            "FUTM": {"lat": 9.5348783, "lon": 6.4509933, "height": 0.000},
+            "IBAD": {"lat": 7.4141183, "lon": 3.9136054, "height": 0.000},
+            "SACR": {"lat": 6.5952066, "lon": 3.3526114, "height": 0.000}
         }
+
 
 
         # Create a Folium map centered around the mean of latitudes and longitudes
