@@ -53,9 +53,9 @@ st.title("Interpolation and Adjustment Calculator")
 # User input for new station
 st.subheader("Enter New Station Details")
 new_station_name = st.text_input("Name")
-new_station_lat = st.number_input("Latitude")
-new_station_lon = st.number_input("Longitude")
-new_station_height = st.number_input("Height")
+new_station_lat = st.number_input("Latitude", format="%.10f")
+new_station_lon = st.number_input("Longitude", format="%.10f")
+new_station_height = st.number_input("Height", format="%.10f")
 
 # New station data
 new_station = {
@@ -64,6 +64,7 @@ new_station = {
     "lon": new_station_lon,
     "height": new_station_height
 }
+
 
 # Calculate UTM coordinates for the new station
 new_station["utm_x"], new_station["utm_y"], new_station["utm_z"] = llh_to_utm(new_station["lat"], new_station["lon"], new_station["height"])
@@ -179,7 +180,6 @@ st.markdown("""
     </div>
 """, unsafe_allow_html=True)
 folium_static(m)
-
 
 
 
