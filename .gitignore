@@ -7,3 +7,6 @@ xxx.py/
 .streamlit/secrets.toml/
 secrets.toml/
 .secrets.toml/
+.login.py/
+.login
+.login\

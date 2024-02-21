@@ -82,6 +82,9 @@ st.info(content)
 
 
 
+
+
+
 import datetime
 import streamlit as st
 from contact_email import contact_email
@@ -102,22 +105,28 @@ with st.form(key="email_forms"):
 
     message = f"From: {user_email}"
 
-    button = st.form_submit_button("Submit")
+    if not user_email:
+        st.error("Please enter your email address.")
+    if not attachment:
+        st.error("Please upload an attachment.")
 
-    if button:
-        if attachment is not None:
-            attachment_content = attachment.getvalue()
-            attachment_name = attachment.name
-            reference_number = generate_reference_number(attachment_name)
-            confirmation_msg = f"Thank you for submitting '{attachment_name}'. Your reference number is '{attachment_name}_{datetime.datetime.now().strftime('%Y%m%d%H%M%S%f')}'. We will get back to you soonest."
-            contact_email("Submission Confirmation", confirmation_msg, None, attachment_name, user_email)
+    submit_button_clicked = st.form_submit_button("Submit")
 
-            contact_email(subject, message, attachment_content, attachment_name, user_email)
-            st.success("Your Message Was sent Successfully. We will get back to you soonest.")
-        else:
-            reference_number = generate_reference_number("NoAttachment")
-            confirmation_msg = f"Thank you for submitting your message. Your reference number is '{reference_number}'. We will get back to you soonest."
-            contact_email("Submission Confirmation", confirmation_msg, None, reference_number, user_email)
+    if submit_button_clicked:
+        if user_email and attachment:
+            if attachment is not None:
+                attachment_content = attachment.getvalue()
+                attachment_name = attachment.name
+                reference_number = generate_reference_number(attachment_name)
+                confirmation_msg = f"Thank you for submitting '{attachment_name}'. Your reference number is '{attachment_name}_{datetime.datetime.now().strftime('%Y%m%d%H%M%S%f')}'. We will get back to you soonest."
+                contact_email("Submission Confirmation", confirmation_msg, None, attachment_name, user_email)
 
-            contact_email(subject, message, None, None, user_email)
-            st.success("Your Message Was sent Successfully. We will get back to you soonest.")
+                contact_email(subject, message, attachment_content, attachment_name, user_email)
+                st.success("Your Message Was sent Successfully. We will get back to you soonest.")
+            else:
+                reference_number = generate_reference_number("NoAttachment")
+                confirmation_msg = f"Thank you for submitting your message. Your reference number is '{reference_number}'. We will get back to you soonest."
+                contact_email("Submission Confirmation", confirmation_msg, None, reference_number, user_email)
+
+                contact_email(subject, message, None, None, user_email)
+                st.success("Your Message Was sent Successfully. We will get back to you soonest.")
