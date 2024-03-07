@@ -36,54 +36,8 @@ Thank you once again for choosing us. Have a wonderful and productive day!
 """
 st.info(content)
 
-# with st.form(key="email_forms"):
-#    # user_name = st.text_input("Which Name Should I Address You With?: (Compulsory) ") *
-#     user_email = st.text_input("Enter your Email Address: (Compulsory) ")
-#     #raw_message = st.text_area("Your Message: (Optional) ") *
-#
-#     # Add file uploader for attachment
-#     attachment = st.file_uploader("Upload Attachment (Compulsory)")
-#
-#     subject = "New email"
-#     if user_email:
-#         subject = f"New email from {user_email}"
-#
-#     # Create the email message
-#     message = f"From: {user_email}"#\n{raw_message}" *
-#
-#     button = st.form_submit_button("Submit")
-#
-#     if button:
-#         # Send email with or without attachment
-#         if attachment is not None:
-#             attachment_content = attachment.getvalue()
-#             attachment_name = attachment.name
-#             contact_email(subject, message, attachment_content, attachment_name)
-#             st.success("Your Message Was sent Successfully. We will get back to you soonest.")
-#             # Reset input fields
-#             user_name = ""
-#             user_email = ""
-#             #raw_message = "" *
-#         else:
-#             contact_email(subject, message)
-#             st.success("Your Message Was sent Successfully. We will get back to you soonest.")
-#             # Reset input fields
-#             user_name = ""
-#             user_email = ""
-#             raw_message = ""
-#
-#         # Send a confirmation message to the user's email
-#         if user_email and attachment is not None:
-#             confirmation_msg = f"Thank you for submitting '{attachment_name}'. We will get back to you soonest."
-#             contact_email("Submission Confirmation", confirmation_msg, attachment_content=None)
-#
-#
-# # for * to track off
-
-
-
-
-
+######################################################################################################
+######################################################################################################
 
 import datetime
 import streamlit as st
@@ -99,9 +53,9 @@ with st.form(key="email_forms"):
 
     attachment = st.file_uploader("Upload Attachment (Compulsory)")
 
-    subject = "New email"
-    if user_email:
-        subject = f"New email from {user_email}"
+    subject = "Data Submission : Okeke_Onah GNSS CORS Processing Center"  # Set the default subject
+    # if user_email:
+    #     subject = f"Okeke_Onah GNSS CORS Processing Center - New email from {user_email}"  # Update the subject if email is provided
 
     message = f"From: {user_email}"
 
@@ -118,15 +72,21 @@ with st.form(key="email_forms"):
                 attachment_content = attachment.getvalue()
                 attachment_name = attachment.name
                 reference_number = generate_reference_number(attachment_name)
-                confirmation_msg = f"Thank you for submitting '{attachment_name}'. Your reference number is '{attachment_name}_{datetime.datetime.now().strftime('%Y%m%d%H%M%S%f')}'. We will get back to you soonest."
-                contact_email("Submission Confirmation", confirmation_msg, None, attachment_name, user_email)
+                # confirmation_msg = f"Thank you for submitting '{attachment_name}'. Your reference number is '{reference_number}_{datetime.datetime.now().strftime('%Y%m%d%H%M%S%f')}'. We will get back to you soonest."
+                # contact_email("Data Submission Confirmation", confirmation_msg, None, None, "okekeonahcorsprocessingunn@gmail.com", user_email)
 
-                contact_email(subject, message, attachment_content, attachment_name, user_email)
-                st.success("Your Message Was sent Successfully. We will get back to you soonest.")
-            else:
-                reference_number = generate_reference_number("NoAttachment")
-                confirmation_msg = f"Thank you for submitting your message. Your reference number is '{reference_number}'. We will get back to you soonest."
-                contact_email("Submission Confirmation", confirmation_msg, None, reference_number, user_email)
+                contact_email(subject, message, attachment_content, attachment_name, "okekeonahcorsprocessingunn@gmail.com", user_email)
+                st.success("Your Data Was sent Successfully. We will get back to you soonest.")
 
-                contact_email(subject, message, None, None, user_email)
-                st.success("Your Message Was sent Successfully. We will get back to you soonest.")
+
+
+
+
+
+            # else:
+            #     reference_number = generate_reference_number("NoAttachment")
+            #     confirmation_msg = f"Thank you for submitting your message. Your reference number is '{reference_number}'. We will get back to you soonest."
+            #     contact_email("Data Submission Confirmation", confirmation_msg, None, None, "okekeonahcorsprocessingunn@gmail.com", user_email)
+            #
+            #     contact_email(subject, message, None, None, "okekeonahcorsprocessingunn@gmail.com", user_email)
+            #     st.success("Your Message Was sent Successfully. We will get back to you soonest.")
